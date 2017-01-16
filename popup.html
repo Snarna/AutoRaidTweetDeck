@@ -1,0 +1,37 @@
+
+<!doctype html>
+<html>
+  <head>
+    <title>GBF Test</title>
+    <style>
+      body {
+        font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+        font-size: 100%;
+      }
+      #status {
+        /* avoid an excessively wide status text */
+        white-space: pre;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        max-width: 400px;
+      }
+    </style>
+    <script src="jquery-2.2.3.min.js"></script>
+    <script src="popup.js"></script>
+  </head>
+  <body>
+    <div>
+      <h4>This is a beta version</h4>
+      <button id="startAutoBattleButton" value="true">Start Auto Battle</button>
+      <button id="stopAutoBattleButton" value="true">Stop Auto Battle</button>
+      <div id="backgroundResponse"></div>
+    </div>
+    <div>
+        <h4>Enter Row You Want To Observe</h4>
+        <input id="obrownum">
+        <button id="obsubmitbutton">Start Ob</button>
+        <div id="backgroundresponseforob"></div>
+    </div>
+
+  </body>
+</html>
